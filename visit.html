@@ -9,29 +9,108 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="myScript.js"></script>
+    <style>
+    div.one {
+        border-style: solid;
+        border-radius: 5px;
+        border-color: #00a2e8;
+    }
+    div.two {
+        background-color: #00a2e8;
+    }    
+    .btn {
+       background-color: #00a2e8;
+    }
+    </style>
     <title>Ayr</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-light bg-light justify-content-center nav-fill" style="list-style-type: none">
         <li class="nav-item">
-           <a class="navbar-brand" href="index.html">Homepage</a>
+           <a class="navbar-brand" href="index.html">Home</a>
         </li>
         <li class="nav-item">
            <a class="navbar-brand" href="history.html">History</a>
         </li>
         <li class="nav-item">
-           <a class="navbar-brand" href="visit.html">Visit Ayr</a>
+           <a class="navbar-brand" href="visit.html">Essential Experiences</a>
         </li>        
     </nav>
-    <div class="container-fluid bg-light text-dark">
+    <div class="container-fluid">
+        <center><h1>Essential Experiences in Ayr</h1></center>
         <div class="modal-body row">
             <div class="col-7">
-               text
+                <div class="one">
+                    <p>
+                        <ul style="font-size: x-large">
+                            <li><b>Ayr Beach</b><br>It is one of the best beaches in Scotland and was awarded a Seaside Award from Keep Scotland Beutiful.</li>
+                            <li><b>Ayr Racecourse</b><br>Opened in 1907 and is home to the Scottish Grand National. Has been voted Best Racecourse in Scotland and the North East nineteen times by the Racegoers Club. </li>
+                            <li><b>Robert Burns Birthplace Museum</b><br>The cottage where Scotlands national poet, Robert Burns was born. Features over 5,000 artifacts including his handwritten manuscripts.</li>
+                            <li><b>Heads of Ayr Farm Park</b><br>Home to a wide range of animals including monkeys, lemurs, meerkats, ponies and a camal. Has plenty of fun activities including boating and quad biking.</li>
+                            <li><b>LA Bowl</b><br>Features Tenpin Bowling, Lazer Megazone, Pool, Amusements, Diner and fully licensed Bar. Ideal for families, adults and kids of all ages.</li>
+                        </ul>
+                    </p>   
+                </div>   
             </div>
             <div class="col-5">
-            two
+                <p>
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#one" aria-expanded="false" aria-controls="one">
+                        Robert Burns Birthplace Museum 
+                    </button>
+                </p>
+                <div class="collapse" id="one">
+                    <div class="card card-body">
+                        <img src="burnsmuseum.jpg" class="img-fluid" class="rounded" alt="Burns Museum">
+                        <br>
+                        <div class="one">
+                            <p style="font-size: x-large">
+                                Open 10:00-17:00<br>Adult £11.50<br>Family £27.00<br>Concession £8.50<br><a href="https://www.nts.org.uk/visit/places/robert-burns-birthplace-museum">Museum Website</a></p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p>
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#two" aria-expanded="false" aria-controls="two">
+                        Heads of Ayr Farm Park        
+                    </button>
+                </p>
+                <div class="collapse" id="two">
+                    <div class="card card-body">
+                        <br>
+                        <div class="one">
+                            <p style="font-size: x-large">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <p>
+                    <button class="btn" type="button" data-toggle="collapse" data-target="#three" aria-expanded="false" aria-controls="three">
+                        LA Bowl                       
+                    </button>
+                </p>
+                <div class="collapse" id="three">
+                    <div class="card card-body">
+                        <br>
+                        <div class="one">
+                            <p style="font-size: x-large">
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
             </div>
         </div>
+        <br>
+        <footer>
+            <div class="two">
+                <div class="text-center">
+                    <p>text</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
